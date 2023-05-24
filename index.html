@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+
+	<title>Iframe Buscador</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+
+	<!-- FAVICON -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+
+	<!-- BOOTSTRAP -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<!-- ICONS -->
+	<link rel="stylesheet" href="css/icons/fontawesome/css/style.css">
+	<link rel="stylesheet" href="css/icons/themify/style.css">
+	<link rel="stylesheet" href="css/icons/ionicons/css/style.css">
+	<link rel="stylesheet" href="css/icons/icomoon/style.css">
+
+	<!-- THEME / PLUGIN CSS -->
+	<link rel="stylesheet" href="js/vendors/flexslider/flexslider.css">
+	<link rel="stylesheet" href="js/vendors/slick/slick.css">
+	<link rel="stylesheet" href="js/vendors/swipebox/css/swipebox.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- SKIN -->
+	<link rel="stylesheet" title="blue" href="css/skins/skin-blue.css"/>
+
+	<!-- DATEPICKER -->
+
+	
+<link rel="stylesheet" type="text/css" href="daterangepicker-master/daterangepicker.css" />
+<link rel="stylesheet" href="js/jquery-timepicker-1.3.5/jquery.timepicker.min.css">
+
+    
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+<style>
+
+@media only screen and (min-width: 993px)  and (max-width: 4000px)  {
+.inicio{
+padding: 80px 0px 80px;
+
+}}
+
+
+@media only screen and (min-width: 400px)  and (max-width: 767px)  {
+.inicio{
+padding: 10px 0px 80px;
+
+}}
+
+</style>
+
+
+
+</head>
+<body>
+
+
+
+<div id="page-top"></div>
+    
+	
+	
+	
+	
+<div id="wrapper">
+	<div class="row">
+					
+		<p>&nbsp;</p>
+		<form class="introform" action="#"   method="POST">
+			<h4 id="content-mobile" class="trn">Mejores Autos, Mejores Precios</h4>
+		
+			<div class="row">
+				<div class="col-xs-6 col-sm-12 col-md-6">
+					<select id="apiom_ciudad_desde"  class="form-control" placeholder="Ciudad Desde">
+						<option>Ciudad Desde</option>
+														   <option value='Bariloche'>Bariloche</option>
+														   <option  value='Salta'>Salta</option>
+					</select>
+				
+				</div>
+				<div class="col-xs-6 col-sm-12 col-md-6">
+					<select id="apiom_ciudad_hasta"  class="form-control" placeholder="Ciudad Hasta">
+						<option>Ciudad Hasta</option>
+														   <option value='Bariloche'>Bariloche</option>
+														   <option  value='Salta'>Salta</option>
+					</select>
+			
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-6 col-sm-12 col-md-6">
+					<input id="apiom_fecha_desde" type="text" name="datefilter"    class="form-control trn" placeholder="Fecha desde">
+				</div>
+				<div class="col-xs-6 col-sm-12 col-md-6">
+					 <input id="apiom_hora_desde" type="time" onchange="onTimeChange()"  class="timeInput form-control trn" placeholder="Hora desde">
+
+					
+					
+				</div>
+			
+			</div>
+			<div class="row">
+				<div class="col-xs-6 col-sm-12 col-md-6">
+					<input id="apiom_fecha_hasta" type="text" name="datefilter"  class="form-control trn" placeholder="Fecha hasta">
+				</div>
+				<div class="col-xs-6 col-sm-12 col-md-6">
+					<input id="apiom_hora_hasta" type="time" class="form-control trn" placeholder="Hora hasta" >
+				</div>
+				
+			</div>
+			<div class="row">
+				<div class="col-xs-6 col-sm-12 col-md-6">
+					<input id="apiom_codigo_tarifa" type="text" class="form-control trn" placeholder="Código Promocional" >
+				</div>
+				<div class="col-xs-6 col-sm-12 col-md-6">
+					<button id="apiom_submit_search" type="submit" class="btn btn-default trn btn-block btn-ico text-center">Buscar auto <i class="fa fa-search"></i></button>
+				</div>
+			
+			</div>
+		
+			
+		</form>
+	</div>
+	<!-- FOOTER -->
+</div>
+
+
+
+
+
+
+<!-- JAVASCRIPT =============================-->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/vendors/flexslider/flexslider.js"></script>
+<script src="js/vendors/slick/slick.min.js"></script>
+<script src="js/vendors/jquery.placeholder.js"></script>
+<script src="js/vendors/jquery.easing.min.js"></script>
+<script src="js/vendors/mc/jquery.ketchup.all.min.js"></script>
+<script src="js/vendors/mc/main.js"></script>
+<script src="js/vendors/jquery.countdown.min.js"></script>
+<script src="js/vendors/swipebox/js/jquery.swipebox.min.js"></script>
+<script src="js/main.js"></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+<script src="js/jquery-timepicker-1.3.5/jquery.timepicker.min.js"></script>
+
+<script type="text/javascript">
+	$(function() {
+	
+	  $('input[name="datefilter"]').daterangepicker({
+		  autoUpdateInput: false,
+		  locale: {
+			  cancelLabel: 'Clear'
+		  }
+	  });
+	
+	  $('input[name="datefilter"]').on('apply.daterangepicker', function(ev, picker) {
+		  $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
+	  });
+	
+	  $('input[name="datefilter"]').on('cancel.daterangepicker', function(ev, picker) {
+		  $(this).val('');
+	  });
+	
+	});
+	</script>
+
+<script>
+	var inputEle = document.getElementById('.timeInput');
+
+
+function onTimeChange() {
+  var timeSplit = inputEle.value.split(':'),
+    hours,
+    minutes,
+    meridian;
+  hours = timeSplit[0];
+  minutes = timeSplit[1];
+  if (hours > 12) {
+    meridian = 'PM';
+    hours -= 12;
+  } else if (hours < 12) {
+    meridian = 'AM';
+    if (hours == 0) {
+      hours = 12;
+    }
+  } else {
+    meridian = 'PM';
+  }
+  alert(hours + ':' + minutes + ' ' + meridian);
+}
+	</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

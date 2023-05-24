@@ -1,0 +1,131 @@
+a:hover {
+	color: #F0C540;
+}
+
+.btn-default {
+	background-color: #23393D;
+}
+
+.btn-default2:hover {
+	background-color: #F0C540;
+}
+
+.btn-default3 {
+	color: #F0C540;
+}
+
+.btn-border:hover {
+	border: 2px solid #F0C540;
+	background: #F0C540;
+}
+
+.navbar-default .navbar-nav > li.active > a ,
+.navbar-default .navbar-nav > li > a:hover {
+	color: #F0C540 !important;
+}
+
+.navbar-nav > li > .dropdown-menu ,
+.navbar-nav > li > .dropdown-menu ul {
+	background: #F0C540;
+}
+
+.navbar-nav > li > .dropdown-menu.dropdown-mega {
+	background: #F0C540;
+}
+
+.top-contact span {
+    color: #F0C540;
+}
+
+.top-contact i {
+    color: #F0C540;
+}
+
+.introform h4 span {
+    color: #F0C540;
+}
+
+.intro3 h2 span {
+    color: #F0C540;
+}
+
+.app-btn {
+    background: #F0C540;
+}
+
+.countdown.styled div span {
+	color:#F0C540;
+}
+
+.ico {
+    background: #F0C540;
+}
+
+.dual-content {
+	background:#F0C540;
+}
+
+.quote-info .author-info .company {
+    color: #F0C540;
+}
+
+.slick-dots li button {
+    border: 1px solid #F0C540;
+}
+
+.slick-dots li.slick-active button {
+    background: #F0C540;
+}
+
+.head-ico {
+    color: #F0C540;
+}
+
+.cta-content .btn {
+    background: #F0C540;
+}
+
+#pricing .panel-default > .panel-heading {
+	color: #F0C540;
+}
+
+.panel-default.active {
+background:#F0C540;
+border:1px solid #F0C540 !important;
+}
+
+.footer-list li a:hover {
+	color:#F0C540;
+}
+
+.footer-social li a {
+    color: #F0C540;
+}
+
+.search button {
+    background: #F0C540;
+}
+
+.pagination li a:hover, .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+    border-color: #F0C540;
+	color:#F0C540;
+}
+
+.blog-thumb .blog-meta i {
+	color:#F0C540;
+}
+
+.text-color-skin-blue {
+	color:#F0C540;
+}
+.text-color-skin-grey {
+	color:#333333;
+}
+
+.text-color-skin-red {
+	color:#ff0000;
+}
+
+.text-color-skin-green {
+	color:#007d04;
+}
